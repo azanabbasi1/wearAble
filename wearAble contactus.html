@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+</head>
+<body>
+    <section style="padding: 40px; background-color: #f2f2f2; font-family: Arial, sans-serif;">
+  <h2 style="text-align: center; font-size: 2.5em; color: #333;">Contact Us</h2>
+  <p style="text-align: center; font-size: 1.2em; color: #555;">We'd love to hear from you! Fill out the form below and we’ll get back to you soon.</p>
+
+  <form style="max-width: 600px; margin: 30px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <label for="name" style="display: block; margin-bottom: 8px; font-weight: bold;">Name:</label>
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+
+    <label for="email" style="display: block; margin-bottom: 8px; font-weight: bold;">Email:</label>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+
+    <label for="message" style="display: block; margin-bottom: 8px; font-weight: bold;">Message:</label>
+    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+
+    <button type="submit" style="margin-top: 20px; background-color: #ff6f61; color: white; border: none; padding: 12px 20px; border-radius: 4px; cursor: pointer; font-size: 1em;">
+      Send Message
+    </button>
+  </form>
+</section>
+ <button class="goback" onclick="GOBACK()"> GO BACK</button>
+   <script>
+   
+function GOBACK(){
+    window.history.back();
+} 
+   </script>
+</body>
+</html>

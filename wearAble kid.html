@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kids Clothing - Wearable</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #ff6f61;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .hero {
+      background-image: url('wearable.png'); /* Replace or keep logo */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #ff6f61;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .product {
+      background: #fff;
+      border: 2px solid #ffe0dc;
+      border-radius: 10px;
+      width: 180px;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .product h2 {
+      font-size: 1.1em;
+      margin: 0;
+      color: #ff6f61;
+    }
+    footer {
+      background-color: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Wearable Kids Clothing</h1>
+  </header>
+
+  <div class="hero">
+    <h1>Fun, Colorful & Comfy</h1>
+  </div>
+
+  <section class="products">
+    <div class="product">
+      <img src="indexwearAbleraninbowforkids.jpg" alt="T-shirt">
+      <h2>Rainbow T-shirt</h2>
+      <p>$14.99</p>
+    </div>
+    <div class="product">
+      <img src="indexwearAblegraphictshirt.jpg" alt="Dress">
+      <h2>graphic t shirt</h2>
+      <p>$24.99</p>
+    </div>
+    <div class="product">
+      <img src="indexwearAblesummershortskids.jpg" alt="Shorts">
+      <h2>Summer Shorts</h2>
+      <p>$12.99</p>
+    </div>
+    <div class="product">
+      <img src="indexcartoonhodiekids.jpg" alt="Hoodie">
+      <h2>Cartoon Hoodie</h2>
+      <p>$19.99</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Wearable Clothing - Kids Collection
+  </footer>
+ <button class="goback" onclick="GOBACK()"> GO BACK</button>
+   <script>
+    
+function GOBACK(){
+    window.history.back();
+} 
+   </script>
+</body>
+</html>

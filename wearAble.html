@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wearAble</title>
+  <style>
+    body {
+      background-color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #f5f5f5;
+    }
+
+    .logo .highlight {
+      color: #00bfa6; /* Accent color for "Able" */
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    /* Mobile menu toggle */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 2rem;
+        background-color: #111;
+        padding: 1rem;
+        border-radius: 8px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-family: cursive;
+      font-size: 50px;
+    }
+
+    para {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: oblique;
+    }
+
+    h3 {
+      text-align: center;
+      font-family: fantasy;
+      font-size: 3rem;
+    }
+
+    p {
+      text-align: center;
+      font-family: serif;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="indexwearAblelogo.png" alt="wearAble" width="90rem" height="90rem">
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="logo">wear<span class="highlight">Able</span></div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="wearAble men.html">MENS</a>
+      <a href="wearAble kid.html">KIDS</a>
+      <a href="wearAble sale.html">SALES</a>
+      <a href="wearAble contactus.html">CONTACT US</a>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+  <h1>wearAble</h1>
+  <p><b><i><u>WHERE QUALITY MEET STYLE</u></i></b></p>
+
+  <p>
+    wearAble is more than a clothing brand — it’s a movement.
+    Rooted in the belief that fashion should empower, not conform, wearAble creates timeless, versatile pieces designed for every body, every day.
+    We blend minimalist aesthetics with thoughtful craftsmanship, making each garment as functional as it is stylish.
+    Whether you're dressing for expression, comfort, or confidence, wearAble gives you the freedom to be unapologetically yourself — because true style is not just what you wear, it's what you're able to do in it.
+  </p>
+
+  <img src="indeximae.png" alt="" width="1300rem" height="700rem">
+
+  <h3>INTERIOR</h3>
+  <p id="para">
+    The interior is modern and elegant, with warm lighting, clean lines, and a neutral color palette. Wooden flooring and plants add warmth, while a spacious layout creates a comfortable shopping experience.
+  </p>
+
+  <img src="indexwearAblecloths.jpg" alt="" width="1300rem" height="700rem">
+</body>
+</html>
